@@ -1,0 +1,16 @@
+// ==UserScript==
+// @name         mypuppy12342
+// @namespace    http://tampermonkey.net/
+// @version      100
+// @description  changes robux on refresh
+// @author       me
+// @match        https://www.roblox.com/*
+// @grant        all
+// ==/UserScript==
+ 
+function start() {
+    var robux = document.getElementById("nav-robux-amount");
+    robux.innerHTML = "999999999999999";
+      setTimeout(start, 0);
+}
+start();
